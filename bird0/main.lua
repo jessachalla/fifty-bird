@@ -14,7 +14,9 @@
     as an infinitely generated obstacle course for the player.
 ]]
 
--- virtual resolution handling library
+-- changed 'getDPIScale' to 'getDPIScale'
+
+-- virtual resolution handling library (for a more retro look)
 push = require 'push'
 
 -- physical screen dimensions
@@ -26,6 +28,7 @@ VIRTUAL_WIDTH = 512
 VIRTUAL_HEIGHT = 288
 
 -- images we load into memory from files to later draw onto the screen
+-- local here means local variable (as oppsed to global)
 local background = love.graphics.newImage('background.png')
 local ground = love.graphics.newImage('ground.png')
 
@@ -54,6 +57,7 @@ function love.keypressed(key)
     end
 end
 
+-- render function
 function love.draw()
     push:start()
     
