@@ -14,7 +14,7 @@
     as an infinitely generated obstacle course for the player.
 ]]
 
--- changed 'getDPIScale' to 'getDPIScale'
+-- changed 'getPixelScale' to 'getDPIScale'
 
 -- virtual resolution handling library (for a more retro look)
 push = require 'push'
