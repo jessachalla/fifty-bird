@@ -41,6 +41,9 @@ function StateMachine:init(states)
 		enter = function() end,
 		exit = function() end
 	}
+	-- This initializes a variable if it's not given a value in your function
+	-- So self.states gets states OR an empty table
+	-- Kind of a short cut for an if statement
 	self.states = states or {} -- [name] -> [function that returns states]
 	self.current = self.empty
 end
